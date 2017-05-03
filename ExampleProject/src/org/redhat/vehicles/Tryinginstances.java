@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Tryinginstances {
     public static void main(String[] args) {
         String brand;
+        //ahoj
         int numberOfWheels;
         Scanner sc = new Scanner(System.in);
         System.out.println("Znacka");
