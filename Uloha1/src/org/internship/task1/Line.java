@@ -23,9 +23,8 @@ public class Line
 
     /**
      * @return line number
-     * @param number
      */
-    public int getLineNumber(int number) {
+    public int getLineNumber() {
         return this.number;
     }
 

@@ -13,8 +13,7 @@ public class Bus {
 
     public Bus(Line line, int capacity) {
         this.capacity = capacity;
-        line.getLineNumber(41);
-        this.number = number;
+        this.number = line.getLineNumber();
     }
     public boolean getOn(){
         if (passengers >= capacity){
@@ -40,7 +39,8 @@ public class Bus {
         return noempty;
     }
 
-    public String toString(int number){
+    @Override
+    public String toString(){
      message = "Bus no. " + number + " is carrying " + passengers + " passengers.";
      return message;
     }

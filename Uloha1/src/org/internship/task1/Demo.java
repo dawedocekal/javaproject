@@ -29,8 +29,8 @@ public class Demo {
         }
         bus3.getOn();
         bus3.getOn();
-        System.out.println(bus1.toString(line.getLineNumber(41)));
-        System.out.println(bus2.toString(line2.getLineNumber(50)));
-        System.out.println(bus3.toString(line2.getLineNumber(50)));
+        System.out.println(bus1.toString());
+        System.out.println(bus2.toString());
+        System.out.println(bus3.toString());
 }
 }
