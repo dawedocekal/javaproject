@@ -16,9 +16,9 @@ public class Line
      * @param end end station of the line
      */
     public Line(int num, String start, String end) {
-        number = num;
-        startStation = start;
-        endStation = end;
+        this.number = num;
+        this.startStation = start;
+        this.endStation = end;
     }
 
     /**
@@ -33,13 +33,13 @@ public class Line
      * @return start station of the bus line
      */
     public String getFirstEndStation() {
-        return startStation;
+        return this.startStation;
     }
 
     /**
      * @return end station of the bus line
      */
     public String getSecondEndStation() {
-        return endStation;
+        return this.endStation;
     }
 }

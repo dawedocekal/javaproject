@@ -34,9 +34,13 @@ public class Bus {
             noempty = false;
         }
         passengers--;
+        if (passengers < 0) {
+            passengers = 0;
+        }
         return noempty;
     }
-    public String toString(){
+
+    public String toString(int number){
      message = "Bus no. " + number + " is carrying " + passengers + " passengers.";
      return message;
     }
