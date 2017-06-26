@@ -8,12 +8,21 @@ public class Bus {
     private boolean empty;
     private boolean noempty;
     private int passengers;
+    private boolean full;
     private String message;
     private int number;
 
     public Bus(Line line, int capacity) {
         this.capacity = capacity;
         this.number = line.getLineNumber();
+    }
+    public boolean isFull(){
+        if (passengers >= capacity){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
     public boolean getOn(){
         if (passengers >= capacity){
