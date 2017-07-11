@@ -4,7 +4,7 @@ package org.internship.exam2;
  * Dancer.
  */
 public class Dancer {
-    private Dancer partner;
+    public Dancer partner;
 
     private boolean female;
 
@@ -16,7 +16,7 @@ public class Dancer {
      */
     public Dancer(int number, boolean isFemale) {
         this.number = number;
-        female = isFemale;
+        this.female = isFemale;
     }
 
     /**
@@ -63,14 +63,16 @@ public class Dancer {
         if (partner == null) {
             throw new NullPointerException("Partner does not exist.");
         }
-        if ((this.partner.hasPartner()) || (partner.hasPartner())) {
+        if ((this.hasPartner()) || (partner.hasPartner())) {
             throw new DancerException("One of them alreade has partner");
         }
-        if (((this.partner.isMale()) && partner.isMale()) || ((this.partner.isFemale()) && (partner.isFemale()))) {
+        if (((this.isMale()) && partner.isMale()) || ((this.partner.isFemale()) && (partner.isFemale()))) {
             throw new DancerException("Same genres.");
         }
         if ((this.number == partner.number)){
             throw new DancerException("One human.");
         }
+        this.partner = partner;
+        partner.partner = this;
     }
 }
