@@ -66,7 +66,7 @@ public class Dancer {
         if ((this.hasPartner()) || (partner.hasPartner())) {
             throw new DancerException("One of them alreade has partner");
         }
-        if (((this.isMale()) && partner.isMale()) || ((this.partner.isFemale()) && (partner.isFemale()))) {
+        if (((this.isMale()) && partner.isMale()) || ((this.isFemale()) && (partner.isFemale()))) {
             throw new DancerException("Same genres.");
         }
         if ((this.number == partner.number)){

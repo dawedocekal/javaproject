@@ -53,7 +53,7 @@ public class DancingLesson {
         catch(Exception e){
             return false;
         }
-        return true;
+        return false;
     }
 }
 
